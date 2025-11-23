@@ -4,64 +4,47 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Служба быстрой доставки в Иркутске</title>
-  <meta name="description" content="Курьерская служба в Иркутске. Быстрая доставка документов, покупок и небольших посылок по городу. Заказ по телефону или в Telegram." />
+  <meta name="description" content="Быстрая курьерская доставка по Иркутску. Позвоните или напишите в Telegram, чтобы оформить заказ.">
   <style>
+    * { box-sizing: border-box; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
       background: #f3f3f3;
-      color: #222;
+      color: #111;
     }
-    header {
-      background: #111;
+    .hero {
+      background: #000;
       color: #fff;
+      padding: 32px 16px 40px;
       text-align: center;
-      padding: 30px 15px 40px;
     }
-    header h1 {
+    .hero h1 {
       margin: 0 0 10px;
       font-size: 28px;
+      line-height: 1.2;
     }
-    header p {
-      margin: 4px 0;
+    .hero p {
+      margin: 6px 0;
       font-size: 16px;
+      opacity: 0.9;
     }
-    .wrap {
-      max-width: 900px;
-      margin: -20px auto 40px;
-      padding: 0 15px 15px;
+    .btn-row {
+      margin-top: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
     }
-    section {
-      background: #fff;
-      border-radius: 12px;
-      padding: 22px 18px;
-      margin-top: 18px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.07);
-    }
-    h2 {
-      margin-top: 0;
-      font-size: 22px;
-      margin-bottom: 10px;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    ul li {
-      margin-bottom: 6px;
-    }
-    .btns {
-      margin-top: 14px;
-    }
-    .btn {
+    .btn-main,
+    .btn-ghost {
       display: inline-block;
-      padding: 12px 20px;
-      border-radius: 10px;
+      padding: 14px 22px;
+      border-radius: 999px;
       text-decoration: none;
+      font-size: 16px;
       font-weight: 600;
-      font-size: 15px;
-      margin-right: 8px;
-      margin-bottom: 8px;
     }
     .btn-main {
       background: #0b63f6;
@@ -71,73 +54,81 @@
       background: #074ac0;
     }
     .btn-ghost {
-      border: 1px solid #ccc;
-      color: #222;
       background: #fff;
+      color: #111;
+    }
+    .section {
+      max-width: 900px;
+      margin: 18px auto;
+      padding: 18px 16px 22px;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    }
+    .section h2 {
+      margin: 0 0 10px;
+      font-size: 20px;
+    }
+    .section ul {
+      margin: 0;
+      padding-left: 18px;
+      font-size: 15px;
+    }
+    .section li {
+      margin-bottom: 6px;
+    }
+    .small {
+      font-size: 13px;
+      opacity: 0.8;
+      margin-top: 6px;
     }
     footer {
       text-align: center;
-      padding: 18px 10px 30px;
+      padding: 16px;
       font-size: 13px;
-      color: #777;
+      color: #666;
+    }
+    @media (min-width: 640px) {
+      .hero h1 { font-size: 32px; }
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Служба быстрой доставки в Иркутске</h1>
-  <p>Курьер за несколько часов: документы, покупки и небольшие посылки по городу.</p>
-  <div class="btns">
-    <a class="btn btn-main" href="tel:+79016638613">Позвонить: +7&nbsp;901&nbsp;663-86-13</a>
-    <a class="btn btn-ghost" href="https://t.me/irk_smoke" target="_blank" rel="noopener noreferrer">Написать в Telegram</a>
-  </div>
-</header>
+  <header class="hero">
+    <h1>Служба быстрой доставки в Иркутске</h1>
+    <p>Курьер по городу: заказы и небольшие посылки.</p>
 
-<div class="wrap">
+    <div class="btn-row">
+      <a class="btn-main" href="tel:+79016638613">Позвонить: +7 901 663-86-13</a>
+      <a class="btn-ghost" href="https://t.me/irk_smoke" target="_blank" rel="noopener noreferrer">
+        Написать в Telegram
+      </a>
+    </div>
 
-  <section>
+    <p class="small">Работаем по Иркутску. Детали и стоимость уточняйте по телефону или в мессенджере.</p>
+  </header>
+
+  <section class="section">
     <h2>Как это работает</h2>
     <ul>
-      <li>Вы рассказываете, что нужно забрать: документы, покупки, небольшую посылку и т.п.</li>
-      <li>Сообщаете адрес забора и доставки, желаемое время.</li>
-      <li>Мы называем стоимость, подтверждаем заказ и отправляем курьера.</li>
+      <li>Вы пишете или звоните и кратко описываете, что и откуда нужно доставить.</li>
+      <li>Сообщаете адреса, желаемое время и контакт получателя.</li>
+      <li>Мы подтверждаем стоимость и отправляем курьера.</li>
     </ul>
-    <p>Работаем по городу Иркутску, возможна доставка в близлежащие районы по договорённости.</p>
   </section>
 
-  <section>
-    <h2>Что можем доставить</h2>
+  <section class="section">
+    <h2>Почему это удобно</h2>
     <ul>
-      <li>Покупки из магазинов и торговых центров.</li>
-      <li>Заказы из пунктов выдачи и постаматов.</li>
-      <li>Документы, мелкие посылки и личные вещи (без запрещённых грузов).</li>
-      <li>Продукты и товары повседневного спроса из ближайших магазинов.</li>
+      <li>Быстрый выезд по Иркутску.</li>
+      <li>Простое оформление заказа: один звонок или сообщение.</li>
+      <li>Связь напрямую без посредников и лишних форм.</li>
     </ul>
   </section>
 
-  <section>
-    <h2>Почему клиенты выбирают нас</h2>
-    <ul>
-      <li>Быстрая доставка по Иркутску — курьер выезжает в день заказа.</li>
-      <li>Понятные цены, без скрытых наценок.</li>
-      <li>Аккуратное отношение к вещам, курьер всегда на связи.</li>
-      <li>Оплата наличными или переводом по договорённости.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Контакты</h2>
-    <p><b>Телефон:</b> <a href="tel:+79016638613">+7&nbsp;901&nbsp;663-86-13</a></p>
-    <p><b>Telegram:</b> <a href="https://t.me/irk_smoke" target="_blank" rel="noopener noreferrer">@irk_smoke</a></p>
-    <p>Позвоните или напишите, чтобы уточнить детали доставки и стоимость.</p>
-  </section>
-
-</div>
-
-<footer>
-  © 2025. Служба быстрой доставки по Иркутску.
-</footer>
-
+  <footer>
+    © 2025. Служба быстрой доставки, г. Иркутск.
+  </footer>
 </body>
 </html>
