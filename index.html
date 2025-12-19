@@ -1,142 +1,107 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function(m,e,t,r,i,k,a){
-        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();
-        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105927812', 'ym');
 
-    ym(105927812, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function(m,e,t,r,i,k,a){
+    m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {
+        if (document.scripts[j].src === r) { return; }
+    }
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,
+    a.parentNode.insertBefore(k,a)
+})(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105927812', 'ym');
+
+ym(105927812, 'init', {
+    clickmap:true,
+    trackLinks:true,
+    accurateTrackBounce:true,
+    webvisor:true
+});
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/105927812" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/105927812" style="position:absolute; left:-9999px;" alt="" /></div>
+</noscript>
 <!-- /Yandex.Metrika counter -->
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Служба быстрой доставки в Иркутске</title>
-  <meta name="description" content="Быстрая курьерская доставка по Иркутску. Позвоните или напишите в Telegram, чтобы оформить заказ.">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Служба быстрой доставки в Иркутске</title>
+<meta name="description" content="Быстрая курьерская доставка по Иркутску. Позвоните или напишите в Telegram, чтобы оформить заказ.">
 
-  <!-- Yandex.Metrika counter -->
-  <script type="text/javascript">
-      (function(m,e,t,r,i,k,a){
-          m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-          m[i].l=1*new Date();
-          for (var j = 0; j < document.scripts.length; j++) {
-              if (document.scripts[j].src === r) { return; }
-          }
-          k=e.createElement(t),
-          a=e.getElementsByTagName(t)[0],
-          k.async=1,
-          k.src=r,
-          a.parentNode.insertBefore(k,a)
-      })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105927812', 'ym');
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  background: #f3f3f3;
+  color: #111;
+}
+.hero {
+  background: #000;
+  color: #fff;
+  padding: 32px 16px 40px;
+  text-align: center;
+}
+.hero h1 {
+  margin: 0 0 10px;
+  font-size: 28px;
+  line-height: 1.2;
+}
+.hero p {
+  margin: 6px 0;
+  font-size: 16px;
+  opacity: 0.9;
+}
+.btn-row {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.btn-main,
+.btn-ghost {
+  display: inline-block;
+  padding: 14px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+.btn-main { background: #0b63f6; color: #fff; }
+.btn-main:hover { background: #074ac0; }
+.btn-ghost { background: #fff; color: #111; }
 
-      ym(105927812, 'init', {
-          clickmap:true,
-          trackLinks:true,
-          accurateTrackBounce:true,
-          webvisor:true
-      });
-  </script>
-  <noscript>
-      <div>
-          <img src="https://mc.yandex.ru/watch/105927812"
-               style="position:absolute; left:-9999px;" alt=""/>
-      </div>
-  </noscript>
-  <!-- /Yandex.Metrika counter -->
+.section {
+  max-width: 900px;
+  margin: 18px auto;
+  padding: 18px 16px 22px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+.section h2 { margin: 0 0 10px; font-size: 20px; }
+.section ul { margin: 0; padding-left: 18px; font-size: 15px; }
+.section li { margin-bottom: 6px; }
 
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
-      background: #f3f3f3;
-      color: #111;
-    }
-    .hero {
-      background: #000;
-      color: #fff;
-      padding: 32px 16px 40px;
-      text-align: center;
-    }
-    .hero h1 {
-      margin: 0 0 10px;
-      font-size: 28px;
-      line-height: 1.2;
-    }
-    .hero p {
-      margin: 6px 0;
-      font-size: 16px;
-      opacity: 0.9;
-    }
-    .btn-row {
-      margin-top: 22px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      align-items: center;
-      justify-content: center;
-    }
-    .btn-main,
-    .btn-ghost {
-      display: inline-block;
-      padding: 14px 22px;
-      border-radius: 999px;
-      text-decoration: none;
-      font-size: 16px;
-      font-weight: 600;
-    }
-    .btn-main {
-      background: #0b63f6;
-      color: #fff;
-    }
-    .btn-main:hover {
-      background: #074ac0;
-    }
-    .btn-ghost {
-      background: #fff;
-      color: #111;
-    }
-    .section {
-      max-width: 900px;
-      margin: 18px auto;
-      padding: 18px 16px 22px;
-      background: #fff;
-      border-radius: 14px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-    }
-    .section h2 {
-      margin: 0 0 10px;
-      font-size: 20px;
-    }
-    .section ul {
-      margin: 0;
-      padding-left: 18px;
-      font-size: 15px;
-    }
-    .section li {
-      margin-bottom: 6px;
-    }
-    .small {
-      font-size: 13px;
-      opacity: 0.8;
-      margin-top: 6px;
-    }
-    footer {
-      text-align: center;
-      padding: 16px;
-      font-size: 13px;
-      color: #666;
-    }
-    @media (min-width: 640px) {
-      .hero h1 { font-size: 32px; }
-    }
-  </style>
+.small { font-size: 13px; opacity: 0.8; margin-top: 6px; }
+
+footer {
+  text-align: center;
+  padding: 16px;
+  font-size: 13px;
+  color: #666;
+}
+
+@media (min-width: 640px) {
+  .hero h1 { font-size: 32px; }
+}
+</style>
+
 </head>
 
 <body>
@@ -146,26 +111,20 @@
   <p>Курьер по городу: заказы и небольшие посылки.</p>
 
   <div class="btn-row">
-    <a class="btn-main" href="tel:+79016638613">
-      Позвонить: +7 901 663-86-13
-    </a>
-
-    <a class="btn-ghost" href="https://t.me/irk_smoke"
-       target="_blank" rel="noopener noreferrer">
+    <a class="btn-main" href="tel:+79016638613">Позвонить: +7 901 663-86-13</a>
+    <a class="btn-ghost" href="https://t.me/irk_smoke" target="_blank" rel="noopener noreferrer">
       Написать в Telegram
     </a>
   </div>
 
-  <p class="small">
-    Работаем по Иркутску. Детали и стоимость уточняйте по телефону или в мессенджере.
-  </p>
+  <p class="small">Работаем по Иркутску. Детали и стоимость уточняйте по телефону или в мессенджере.</p>
 </header>
 
 <section class="section">
   <h2>Как это работает</h2>
   <ul>
-    <li>Вы пишете или звоните и кратко описываете, что и откуда нужно доставить.</li>
-    <li>Сообщаете адреса, желаемое время и контакт получателя.</li>
+    <li>Вы пишете или звоните…</li>
+    <li>Сообщаете адреса…</li>
     <li>Мы подтверждаем стоимость и отправляем курьера.</li>
   </ul>
 </section>
@@ -173,9 +132,9 @@
 <section class="section">
   <h2>Почему это удобно</h2>
   <ul>
-    <li>Быстрый выезд по Иркутску.</li>
-    <li>Простое оформление заказа: один звонок или сообщение.</li>
-    <li>Связь напрямую без посредников и лишних форм.</li>
+    <li>Быстрый выезд</li>
+    <li>Простое оформление</li>
+    <li>Связь без посредников</li>
   </ul>
 </section>
 
